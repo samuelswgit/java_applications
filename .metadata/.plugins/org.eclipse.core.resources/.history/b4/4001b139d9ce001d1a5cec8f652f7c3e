@@ -1,0 +1,32 @@
+package TestPackage;
+
+public class PrimeCount {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int startx =2;
+		int endx =20;
+		System.out.println(primeCount(startx,endx));
+
+	}
+	
+	public static int primeCount(int startx,int endx)
+	{
+		int counts=0;
+		for(int c=startx;c<=endx;c++)
+		{
+			for(int y=2;y<=startx;y++) {
+				if(startx%y==0) {
+					break;
+					
+				}
+				
+				
+			}
+			counts++;
+			
+		}
+		return counts;
+	}
+
+}

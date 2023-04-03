@@ -1,0 +1,9 @@
+package Datacollection;
+
+public class Userlogin_pg {
+
+	public Userlogin_pg() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

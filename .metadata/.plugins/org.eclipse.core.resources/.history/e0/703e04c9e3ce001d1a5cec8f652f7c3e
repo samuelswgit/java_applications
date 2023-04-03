@@ -1,0 +1,45 @@
+package TestPackage;
+
+public class IsMadhavArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int [] arratest={2, 1, 1, 4, -1, -1};
+		System.out.println(isMadhavArray(arratest));
+
+	}
+	
+	public static boolean isMadhavArray(int [] arrayx) {
+		boolean sMadhavArray=false;
+		int initial_sum=0;
+		int number_of_cyle=2;
+		for(int v=0;v<arrayx.length;v++) {
+			
+			int currentvalue=methodtwo(v,arrayx);
+			
+			if(arrayx[v]==currentvalue) 
+			{
+				sMadhavArray=true;
+			}
+			initial_sum=arrayx[v]+arrayx[v+1];
+			
+			
+		}
+		
+		return sMadhavArray; 
+	}
+	public static int methodtwo(int y,int [] arrayx) {
+		int number=y+2;
+		int currentsum=0;
+		{
+		 for (int h=0;h<number;h++)
+		 {
+			 currentsum=currentsum +arrayx[h];
+		 }
+		}
+		
+		return currentsum;
+		
+	}
+
+}

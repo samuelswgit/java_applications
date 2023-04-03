@@ -1,0 +1,41 @@
+package BubbleSort;
+
+public class BubbleSort {
+
+	public BubbleSort() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int [] sortme= {12,4,7,-12,4,-5,18,55};
+		for(int x=0;x<sortme.length;x++)
+		{ for(int y=x;y<sortme.length-1;y++) {
+			sortme=sort(sortme,sortme[y],sortme[y+1],y);
+
+	     }
+		}
+		for(int h=0;h<sortme.length;h++) {
+			System.out.print(sortme[h]+",");
+		}
+		
+		
+	}
+	
+	public static int [] sort(int [] sam,int x,int y,int g) {
+	 
+		if(x==y) {
+			//return sam;
+		}
+		if(x>y)
+		{
+			sam[g+1]=x;
+			sam [g]=y;
+		}
+		
+		return sam;
+		
+	}
+
+}

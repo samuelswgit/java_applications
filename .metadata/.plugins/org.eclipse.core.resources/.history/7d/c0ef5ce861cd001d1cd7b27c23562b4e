@@ -1,0 +1,15 @@
+package Queue_package;
+import java.util.AbstractQueue;
+
+public class Queueclass {
+
+	public Queueclass() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

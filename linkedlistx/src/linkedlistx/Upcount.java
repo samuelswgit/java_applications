@@ -1,0 +1,38 @@
+package linkedlistx;
+
+public class Upcount {
+
+	public Upcount() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int [] newarray= {1,2,-1,5,3,2,-3};
+		int inup=20;
+		System.out.println(upcountx(newarray,inup));
+
+	}
+	
+	public static int upcountx(int [] sam, int totalx ) {
+		int countx=0;
+		
+	int currentsum=0;
+	int sum=0;
+	for(int x=0;x<sam.length;x++) {
+		sum=sum+sam[x];
+		if(currentsum<=totalx && totalx<sum)
+		{
+			System.out.println("This"+currentsum+"is less than "+totalx+"ad less than "+ sum);
+			countx++;
+			//currentsum=sum;
+		}
+	}
+		
+		
+		return countx;
+		
+	}
+
+}

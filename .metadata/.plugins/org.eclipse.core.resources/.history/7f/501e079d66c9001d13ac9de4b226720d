@@ -1,0 +1,56 @@
+package array_java;
+
+public class ArrayDemo {
+
+	public ArrayDemo() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		
+		int [] intarray;
+		
+		intarray=new int[8];
+		System.out.println("before adding data");
+		//display(intarray);
+		display(intarray);
+		
+		for (int x=0;x<intarray.length;x++) {
+			System.out.println ("we are inputing"+x+" in memory index "+x);
+			
+			intarray[x]=x;
+		}		
+		
+	      System.out.println();
+	      System.out.println("after adding data");
+	      display(intarray);
+	      intarray[5]=10;
+	      System.out.println("after updaing array"+5);
+	      int value=4;
+	      for(int x=0;x<intarray.length;x++) {
+	    	  if (intarray[x]==value){
+	    		  System.out.println(intarray[x]+ "is equal to "+value);
+	      }
+	      }
+	      
+	      
+	      
+		
+	}
+	private static void  display(int[] intarray)
+    {
+  	//  System.out.println("Array : [" );
+  	  System.out.println("Array : [");
+        for(int i = 0; i< intarray.length; i++)
+        {
+           // display value of element at index i. 
+           System.out.print(" "+intarray[i]);
+        }
+        System.out.println(" ]");
+        System.out.println();
+       // return "sam";
+     }
+
+}

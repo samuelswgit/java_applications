@@ -1,0 +1,35 @@
+package linkedlistx;
+
+public class Isolympic {
+
+	public Isolympic() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//int [] testarry={1, 2, 1, 3, 2} ;
+		int [] testarry={2, 2, 1, 1};
+		System.out.println(IsOlympic(testarry));
+	}
+	public static int IsOlympic(int[] theArray)
+    {
+        int isOlympic=1;
+		for (int idx = 0; idx < theArray.length; idx++)
+        {
+            int theSum = 0;
+
+            for (int jdx = 0; jdx < theArray.length; jdx++)
+            {
+                if (theArray[jdx] < theArray[idx])
+                    theSum += theArray[jdx];
+            }
+
+            if (theArray[idx] < theSum)
+            	 isOlympic=0;
+        }
+
+        return isOlympic;
+    }
+
+}

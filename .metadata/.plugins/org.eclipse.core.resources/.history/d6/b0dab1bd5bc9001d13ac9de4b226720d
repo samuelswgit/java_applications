@@ -1,0 +1,27 @@
+package array_java;
+
+public class ArrayDemo {
+
+	public ArrayDemo() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int [] intarray;
+		
+		intarray=new int[8];
+		System.out.println("before adding data");
+		//display(intarray);
+		display(intarray);
+		
+		for (int x=0;x<intarray.length;x++) {
+			System.out.println ("we are inputing"+x+" in memory index "+x);
+			
+			intarray[x]=x;
+		}
+		
+	}
+
+}

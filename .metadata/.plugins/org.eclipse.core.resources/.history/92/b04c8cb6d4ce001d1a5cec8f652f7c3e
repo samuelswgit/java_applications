@@ -1,0 +1,33 @@
+package TestPackage;
+
+public class NUpcount {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int [] arrayv= {2,3,1-6,8,-3,2,1};
+		System.out.println(arrayv);
+
+	}
+	
+	public static int nupcount(int [] arrayx)	
+	{
+		int countx=0;
+		int previoustotal=0;
+		int currenttotal=0;
+		for(int c=0;c<arrayx.length;c++)
+		{
+			currenttotal=currenttotal+arrayx[c];
+			if(previoustotal<=arrayx[c] && currenttotal>arrayx[c] ) {
+				countx++;
+			}
+			previoustotal=currenttotal;
+			
+		}
+		
+		
+		
+		
+		return countx;
+	}
+
+}

@@ -1,0 +1,43 @@
+package linkedlistx;
+
+public class IsMercurialtest {
+
+	public IsMercurialtest() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//int [] a={1, 2, 10, 3, 15, 1, 2, 2};
+		//int [] a={5, 2, 10, 3, 15, 1, 2, 2};
+		int [] a={3, 2, 18, 1, 0, 3, -11, 1, 3};
+		//int [] a={8, 2, 1, 1, 18, 3, 5};
+		System.out.println(isMercurial( a));
+
+	}
+	public static int isMercurial(int[] a) {
+		int index1 = -1;
+		int index3 = -1;
+		for (int i = 0; i < a.length; i++) {
+			if (a[i] == 1) {
+				index1 = i;
+			}
+			if (a[i] == 3) {
+				index3 = i;
+			}
+
+			if (index1 != -1 && index3 > index1) {
+				for (int j = index3; j < a.length; j++) {
+
+					if (a[j] == 1) {
+
+						return 0;
+					}
+				}
+			}
+		}
+		return 1;
+	}
+	
+
+}
